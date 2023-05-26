@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 import Chat from "./Chat";
+import ChatComponent from "./ChatComponent";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -51,6 +52,7 @@ function App() {
   return (
     <Router>
       <div className='app'>
+        <ChatComponent></ChatComponent>
         <Route
           exact
           path='/'
