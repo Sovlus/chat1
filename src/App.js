@@ -24,6 +24,15 @@ function App() {
     }
   };
 
+  const fetchUsers = async () => {
+    try {
+      const response = await axios.get("/api/users");
+      setUsers(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return <div className='App'></div>;
 }
 
