@@ -33,6 +33,13 @@ function App() {
     }
   };
 
+    const sendMessage = async (text) => {
+    const message = {
+      text,
+      sender: name,
+    };
+
+
   return <div className='App'></div>;
 }
 
