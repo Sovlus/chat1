@@ -15,6 +15,15 @@ function App() {
     fetchUsers();
   }, []);
 
+  const fetchMessages = async () => {
+    try {
+      const response = await axios.get("/api/messages");
+      setMessages(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return <div className='App'></div>;
 }
 
