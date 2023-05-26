@@ -47,7 +47,26 @@ function App() {
     }
   };
 
-  return <div className='App'></div>;
+  return (
+    <Router>
+      <div className='app'>
+        <Route
+          exact
+          path='/'
+          render={(props) => (
+            <Chat
+              {...props}
+              name={name}
+              messages={messages}
+              users={users}
+              setName={setName}
+              sendMessage={sendMessage}
+            />
+          )}
+        />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
