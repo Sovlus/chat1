@@ -6,6 +6,10 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
+  const [messages, setMessages] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [name, setName] = useState("");
+
   return <div className='App'></div>;
 }
 
