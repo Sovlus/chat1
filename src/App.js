@@ -33,12 +33,19 @@ function App() {
     }
   };
 
-    const sendMessage = async (text) => {
+  const sendMessage = async (text) => {
     const message = {
       text,
       sender: name,
     };
 
+    try {
+      await axios.post("/api/messages", message);
+      fetchMessages();
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return <div className='App'></div>;
 }
