@@ -10,6 +10,11 @@ function App() {
   const [users, setUsers] = useState([]);
   const [name, setName] = useState("");
 
+  useEffect(() => {
+    fetchMessages();
+    fetchUsers();
+  }, []);
+
   return <div className='App'></div>;
 }
 
