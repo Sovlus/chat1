@@ -21,6 +21,3 @@ export const sendMessage = (message) => {
         id: messages.length + 1,
         text: message,
         sender: "John",
-      };
-      messages.push(newMessage);
-      resolve(newMessage);
