@@ -5,7 +5,3 @@ const messages = [
 ];
 
 // Symulacja wiadomosci
-export const fetchMessages = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(messages);
