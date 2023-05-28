@@ -14,7 +14,3 @@ export const fetchMessages = () => {
 };
 
 // wyslanie nowej wiadomosci
-export const sendMessage = (message) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const newMessage = {
