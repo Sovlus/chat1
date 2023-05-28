@@ -9,8 +9,3 @@ export const fetchMessages = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(messages);
-    }, 1000);
-  });
-};
-
-// wyslanie nowej wiadomosci
