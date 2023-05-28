@@ -24,6 +24,3 @@ export const sendMessage = (message) => {
       };
       messages.push(newMessage);
       resolve(newMessage);
-    }, 1000);
-  });
-};
