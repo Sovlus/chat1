@@ -18,6 +18,3 @@ export const sendMessage = (message) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const newMessage = {
-        id: messages.length + 1,
-        text: message,
-        sender: "John",
