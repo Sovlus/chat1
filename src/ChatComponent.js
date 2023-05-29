@@ -20,7 +20,6 @@ function ChatComponent() {
       .catch((error) => console.log(error));
   };
 
-  // Render
   return (
     <div>
       <h1>Chat Component</h1>
