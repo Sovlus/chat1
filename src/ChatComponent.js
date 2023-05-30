@@ -12,7 +12,7 @@ function ChatComponent() {
   }, []);
 
   const handleSendMessage = (message) => {
-    // Send
+
     sendMessage(message)
       .then((newMessage) => {
         setMessages((prevMessages) => [...prevMessages, newMessage]);
